@@ -187,10 +187,6 @@ input {
   color: var(--text-muted);
 }
 
-.nav {
-  display: none;
-}
-
 .nav-list {
   display: flex;
   gap: 18px;
@@ -940,6 +936,7 @@ main {
   position: fixed;
   inset: 56px 12px auto 12px;
   z-index: 15;
+  display: block;
   border-radius: 18px;
   padding: 10px 12px;
   background: radial-gradient(circle at 0 0, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.98));
