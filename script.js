@@ -11,6 +11,8 @@ const revealEls = document.querySelectorAll(
 );
 const bgOrbits = document.querySelectorAll('.bg-orbit');
 const bgWaves = document.querySelector('.bg-waves');
+const orbitRing = document.querySelector('.hero-orbit-ring');
+const orbitNodes = document.querySelectorAll('.hero-orbit-node');
 
 const mqDesktop = window.matchMedia('(min-width: 768px)');
 
@@ -128,6 +130,9 @@ let waveTiltY = 0;
 let waveTargetX = 0;
 let waveTargetY = 0;
 
+let orbitAngle = 0;
+let orbitTargetAngle = 0;
+
 const hasReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function updateBackgroundParallax(xRatio, yRatio) {
@@ -158,6 +163,18 @@ if (!hasReducedMotion) {
   window.addEventListener('deviceorientation', handleDeviceOrientation);
 }
 
+function handleScroll() {
+  if (!orbitRing || hasReducedMotion) return;
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollY = window.scrollY || window.pageYOffset || 0;
+  const progress = maxScroll > 0 ? scrollY / maxScroll : 0;
+  const maxAngle = 220;
+  orbitTargetAngle = progress * maxAngle;
+}
+
+window.addEventListener('scroll', handleScroll, { passive: true });
+handleScroll();
+
 function animateBackground() {
   waveTiltX += (waveTargetX - waveTiltX) * 0.06;
   waveTiltY += (waveTargetY - waveTiltY) * 0.06;
@@ -176,6 +193,14 @@ function animateBackground() {
 
   if (bgWaves) {
     bgWaves.style.transform = `translate3d(${waveOffsetX}px, ${waveOffsetY}px, 0) scale(1.02)`;
+  }
+
+  if (!hasReducedMotion && orbitRing) {
+    orbitAngle += (orbitTargetAngle - orbitAngle) * 0.08;
+    orbitRing.style.transform = `rotate(${orbitAngle}deg)`;
+    orbitNodes.forEach((node) => {
+      node.style.transform = `rotate(${-orbitAngle}deg)`;
+    });
   }
 
   requestAnimationFrame(animateBackground);
