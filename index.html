@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VK Spring Campus Championship — дизайн и разработка</title>
+    <meta
+      name="description"
+      content="Весенний чемпионат VK по направлениям дизайн и разработка для студентов колледжей и вузов. Призы, менторство, практика на реальных задачах."
+    />
+    <meta name="theme-color" content="#0077ff" />
+
+    <meta property="og:title" content="VK Spring Campus Championship" />
+    <meta
+      property="og:description"
+      content="Присоединяйся к чемпионату VK по дизайну и разработке. Футуристичный челлендж для новой цифровой эпохи."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="bg-orbit bg-orbit-1"></div>
+      <div class="bg-orbit bg-orbit-2"></div>
+      <div class="bg-orbit bg-orbit-3"></div>
+      <svg class="bg-waves" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+        <path
+          class="bg-wave bg-wave-1"
+          d="M0,160L60,154.7C120,149,240,139,360,149.3C480,160,600,192,720,197.3C840,203,960,181,1080,176C1200,171,1320,181,1380,186.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+        ></path>
+        <path
+          class="bg-wave bg-wave-2"
+          d="M0,192L60,181.3C120,171,240,149,360,144C480,139,600,149,720,154.7C840,160,960,160,1080,149.3C1200,139,1320,117,1380,106.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
+
+    <header class="header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="logo" aria-label="VK Championship">
+          <span class="logo-mark">vk</span>
+          <span class="logo-text">
+            <span class="logo-title">VK Campus</span>
+            <span class="logo-subtitle">Spring Championship</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" aria-label="Главная навигация">
+          <ul class="nav-list">
+            <li><a href="#about">О чемпионате</a></li>
+            <li><a href="#tracks">Направления</a></li>
+            <li><a href="#prizes">Призы</a></li>
+            <li><a href="#subscribe">Подписка</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-contacts">
+          <a href="mailto:campus@vk.com" class="header-contact-link">campus@vk.com</a>
+          <a href="tel:+78001001010" class="header-contact-link">+7 800 100-10-10</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="hero-kicker">Весенний чемпионат VK</p>
+            <h1 id="hero-title" class="hero-title">
+              Футуристичный<br />
+              чемпионат по <span>дизайну</span> и <span>разработке</span>
+            </h1>
+            <p class="hero-text">
+              Пройди путь от идеи до рабочего прототипа цифрового сервиса VK. Реальные задачи, менторство от экспертов и
+              ценные призы для лучших команд.
+            </p>
+            <div class="hero-meta">
+              <div class="hero-meta-item">
+                <span class="hero-meta-label">Даты проведения</span>
+                <span class="hero-meta-value">15 марта — 30 апреля 2026</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-label">Формат</span>
+                <span class="hero-meta-value">Онлайн + финал в кампусе VK</span>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <a href="#subscribe" class="btn btn-primary">Подать заявку / подписаться</a>
+              <a href="#about" class="btn btn-ghost">Подробнее о чемпионате</a>
+            </div>
+            <div class="hero-tags" aria-label="Основные теги чемпионата">
+              <span>#дизайн-интерфейсов</span>
+              <span>#frontend-разработка</span>
+              <span>#VKобразование</span>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-orbit hero-orbit-main">
+              <div class="hero-orbit-node hero-orbit-node--design">UI&nbsp;/&nbsp;UX</div>
+              <div class="hero-orbit-node hero-orbit-node--dev">Frontend</div>
+              <div class="hero-orbit-node hero-orbit-node--vk">VK ID</div>
+              <div class="hero-orbit-core">
+                <span>VK</span>
+                <span>Champ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-about">
+        <div class="container section-inner two-column">
+          <div class="section-content">
+            <h2 class="section-title">О чемпионате</h2>
+            <p class="section-lead">
+              VK запускает весенний чемпионат для студентов колледжей и вузов, которые хотят прокачать цифровой дизайн и
+              разработку на реальных кейсах.
+            </p>
+            <div class="chips">
+              <span class="chip">Для студентов 16–25 лет</span>
+              <span class="chip">Команды от 2 до 4 человек</span>
+              <span class="chip">Онлайн-этап + офлайн-финал</span>
+            </div>
+          </div>
+          <div class="section-panel">
+            <h3 class="panel-title">Условия участия</h3>
+            <ul class="panel-list">
+              <li>Обучение в колледже или вузе на момент регистрации.</li>
+              <li>Наличие действующего VK ID у каждого участника.</li>
+              <li>Готовность посвятить 6–8 часов в неделю проекту в течение чемпионата.</li>
+              <li>Согласие на использование результатов проекта в образовательных целях.</li>
+            </ul>
+            <p class="panel-note">
+              Все участники получают сертификаты и доступ к закрытым образовательным материалам VK.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tracks" class="section section-tracks">
+        <div class="container section-inner">
+          <div class="section-header">
+            <h2 class="section-title">Направления чемпионата</h2>
+            <p class="section-lead">
+              Выбери свой трек или собери междисциплинарную команду, сочетая дизайн и разработку.
+            </p>
+          </div>
+          <div class="cards-grid">
+            <article class="card track-card">
+              <h3 class="card-title">Дизайн цифровых сервисов</h3>
+              <p class="card-text">
+                Проектирование интерфейсов для сервисов VK: лендинги, приложения, личные кабинеты. Фокус на пользовательском
+                опыте и визуальной айдентике.
+              </p>
+              <ul class="card-list">
+                <li>UX-исследования и пользовательские сценарии</li>
+                <li>Дизайн-система в фирменном стиле VK</li>
+                <li>Прототипирование в Figma</li>
+              </ul>
+              <span class="card-tag">Design</span>
+            </article>
+            <article class="card track-card">
+              <h3 class="card-title">Frontend‑разработка</h3>
+              <p class="card-text">
+                Адаптивная вёрстка, анимации, интеграция с VK API. Реализация интерфейсов по разработанным дизайн-макетам.
+              </p>
+              <ul class="card-list">
+                <li>Современный HTML, CSS, JavaScript</li>
+                <li>Работа с VK Mini Apps / VK API</li>
+                <li>Оптимизация производительности</li>
+              </ul>
+              <span class="card-tag">Development</span>
+            </article>
+            <article class="card track-card">
+              <h3 class="card-title">Командный трек</h3>
+              <p class="card-text">
+                Междисциплинарные команды, где дизайнеры и разработчики работают вместе над сквозным кейсом VK.
+              </p>
+              <ul class="card-list">
+                <li>Командная работа и проектный менеджмент</li>
+                <li>Синхронизация дизайна и разработки</li>
+                <li>Презентация проекта жюри</li>
+              </ul>
+              <span class="card-tag">Team</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="prizes" class="section section-prizes">
+        <div class="container section-inner">
+          <div class="section-header">
+            <h2 class="section-title">Призы и возможности</h2>
+            <p class="section-lead">
+              Чемпионат — это не только про места в таблице. Это шанс попасть в экосистему VK и сделать сильный шаг в
+              карьере.
+            </p>
+          </div>
+          <div class="cards-grid cards-grid--prizes">
+            <article class="card prize-card">
+              <div class="prize-icon prize-icon--gold"></div>
+              <h3 class="card-title">1 место</h3>
+              <p class="card-text">
+                Техничные призы от VK, пригласительный на стажировку, индивидуальный карьерный разбор с экспертами.
+              </p>
+              <ul class="card-list">
+                <li>Техника и мерч VK</li>
+                <li>Пакет рекомендаций в партнёрские компании</li>
+                <li>Приоритет на участие в закрытых интенсивах</li>
+              </ul>
+            </article>
+            <article class="card prize-card">
+              <div class="prize-icon prize-icon--silver"></div>
+              <h3 class="card-title">2–3 место</h3>
+              <p class="card-text">
+                Фирменный мерч, доступ к дополнительным образовательным программам и менторским сессиям VK.
+              </p>
+              <ul class="card-list">
+                <li>Образовательные сертификаты</li>
+                <li>Менторские сессии с дизайнерами и разработчиками VK</li>
+                <li>Приглашения на профильные события VK</li>
+              </ul>
+            </article>
+            <article class="card prize-card">
+              <div class="prize-icon prize-icon--bronze"></div>
+              <h3 class="card-title">Для всех участников</h3>
+              <p class="card-text">
+                Сертификат участника, доступ к лекциям, попадание в закрытое сообщество VK Campus.
+              </p>
+              <ul class="card-list">
+                <li>Онлайн‑библиотека материалов</li>
+                <li>Закрытый VK‑чат чемпионата</li>
+                <li>Шаблоны для портфолио и резюме</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-timeline">
+        <div class="container section-inner">
+          <div class="section-header">
+            <h2 class="section-title">Этапы чемпионата</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">1–14 марта</span>
+                <h3 class="timeline-title">Регистрация и отбор</h3>
+                <p>Заполни форму, собери команду и получи первое вводное задание от команды VK.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">15 марта — 20 апреля</span>
+                <h3 class="timeline-title">Основной этап</h3>
+                <p>Работа над кейсом, консультации менторов, промежуточные проверки и доработки.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">25–30 апреля</span>
+                <h3 class="timeline-title">Финал и защита</h3>
+                <p>Презентация проекта жюри VK, объявление победителей и награждение.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="subscribe" class="section section-subscribe">
+        <div class="container section-inner two-column">
+          <div class="section-content">
+            <h2 class="section-title">Подпишись на рассылку о чемпионате</h2>
+            <p class="section-lead">
+              Оставь email, чтобы первым получать новости о старте регистрации, дедлайнах, вебинарах и полезных материалах.
+            </p>
+            <ul class="bullet-list">
+              <li>Напоминания о ключевых датах чемпионата.</li>
+              <li>Разборы кейсов и советы от команды VK.</li>
+              <li>Подборки стажировок и образовательных программ.</li>
+            </ul>
+          </div>
+
+          <div class="section-panel section-panel--glass">
+            <form class="subscribe-form" novalidate>
+              <label class="field">
+                <span class="field-label">Email для рассылки</span>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  inputmode="email"
+                />
+                <span class="field-error" data-field-error="email"></span>
+              </label>
+
+              <label class="field field-checkbox">
+                <input type="checkbox" name="consent" required />
+                <span>
+                  Я соглашаюсь на обработку персональных данных и получение информационных email‑рассылок от VK.
+                </span>
+              </label>
+              <span class="field-error" data-field-error="consent"></span>
+
+              <button type="submit" class="btn btn-primary btn-full">Подписаться на новости</button>
+              <p class="form-note">
+                Мы не передаём контактные данные третьим лицам. Можно отписаться в любой момент по ссылке в письме.
+              </p>
+              <p class="form-success" hidden>Спасибо! Мы отправили письмо с подтверждением на ваш email.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacts" class="footer">
+      <div class="container footer-inner">
+        <div class="footer-col">
+          <a href="#top" class="logo footer-logo" aria-label="VK Championship">
+            <span class="logo-mark">vk</span>
+            <span class="logo-text">
+              <span class="logo-title">VK Campus</span>
+              <span class="logo-subtitle">Championship</span>
+            </span>
+          </a>
+          <p class="footer-text">
+            Образовательный чемпионат VK по дизайну и разработке для студентов колледжей и вузов.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Контакты</h3>
+          <ul class="footer-list">
+            <li><a href="mailto:campus@vk.com">campus@vk.com</a></li>
+            <li><a href="tel:+78001001010">+7 800 100-10-10</a></li>
+            <li>Москва, кампус VK</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Мы в соцсетях</h3>
+          <div class="socials">
+            <a href="#" aria-label="VK">
+              <span class="social-icon social-icon--vk"></span>
+            </a>
+            <a href="#" aria-label="Telegram">
+              <span class="social-icon social-icon--tg"></span>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <span class="social-icon social-icon--yt"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <span>© 2026 VK. Все права защищены.</span>
+          <a href="#top" class="footer-link">Наверх</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
